@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 
 
 class MainPageLocators:
-    MAIN_ORDER_BUTTON = (By.XPATH, ".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']")  # Кнопка заказать  в середине страницы
+    MAIN_ORDER_BUTTON = (By.XPATH, ".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']")  # Кнопка заказать в середине страницы
     HEADER_ORDER_BUTTON = (By.XPATH, ".//button[@class = 'Button_Button__ra12g']")  # Кнопка заказа в заголовке страницы
     DZEN = (By.XPATH, ".//div[text()='Удобный и быстрый Яндекс Браузер']")  # Попап яндекс
     YANDEX_LOGO = (By.XPATH, ".//a[@class='Header_LogoYandex__3TSOI']")  # Яндекс лого
@@ -22,5 +22,7 @@ class MainPageLocators:
     ACCORDION_ANSWER_7 = (By.XPATH, ".//div[@id='accordion__panel-6']")  # Ответ на седьмой вопрос
     ACCORDION_QUESTION_8 = (By.XPATH, ".//div[@aria-controls= 'accordion__panel-7']")  # Восьмой вопрос
     ACCORDION_ANSWER_8 = (By.XPATH, ".//div[@id='accordion__panel-7']")  # Ответ на восьмой вопрос
+
+
 
 

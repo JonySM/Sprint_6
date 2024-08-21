@@ -1,6 +1,7 @@
 class Url:
     QA_SCOOTER_SERVICE = "https://qa-scooter.praktikum-services.ru/"
     DZEN = 'https://dzen.ru/?yredirect=true'
+    DZEN_MAIN = 'https://dzen.ru/'
 
 
 class Data:
@@ -36,3 +37,4 @@ class MainData:
                          'без передышек и во сне. Зарядка не понадобится.')
     ANSWER_TEXT_SEVENTH = 'Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.'
     ANSWER_TEXT_EIGHTH = 'Да, обязательно. Всем самокатов! И Москве, и Московской области.'
+
