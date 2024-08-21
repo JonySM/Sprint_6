@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 class OrderPageLocators:
     NAME_FILD = (By.XPATH, ".//input[@placeholder ='* Имя']")  # Имя
     SURNAME_FILD = (By.XPATH, ".//input[@placeholder ='* Фамилия']")  # Фамилия
-    ADRESS_FILD = (By.XPATH, ".//input[@placeholder ='* Адрес: куда привезти заказ']")  # Адрес
+    ADDRESS_FILD = (By.XPATH, ".//input[@placeholder ='* Адрес: куда привезти заказ']")  # Адрес
     SUBWAY_FILD = (By.XPATH, ".//input[@placeholder ='* Станция метро']")  # Метро
     SUBWAY_DROP_VOIK = (By.XPATH, ".//div[text()='Войковская']")  # Войковская
     SUBWAY_DROP_SOKOL = (By.XPATH, ".//div[text()='Сокол']")  # Сокол
@@ -21,6 +21,12 @@ class OrderPageLocators:
     TWO_DAY = (By.XPATH, ".//div[text()='двое суток']")  # Дропдаун на двое суток
     SUCCESS_ORDER_POPUP = (By.XPATH, ".//div[@class='Order_ModalHeader__3FDaJ']")  # Попап успешного заказа
     LOGO_SCOOTER =(By.XPATH, ".//a[@class='Header_LogoScooter__3lsAR']")  # Логотип самокат
+    ERROR_MESSAGE_NAME = (By.XPATH, ".//div[text()='Введите корректное имя']")  # Тултип невалидных данных в поле имя
+    ERROR_MESSAGE_SURNAME = (By.XPATH, ".//div[text()='Введите корректную фамилию']")  # Тултип невалидных данных в поле фамилия
+    ERROR_MESSAGE_ADDRESS = (By.XPATH, ".//div[text()='Введите корректный адрес']")  # Тултип невалидных данных в поле адрес
+    ERROR_MESSAGE_PHONE = (By.XPATH, ".//div[text()='Введите корректный номер']")  # Тултип невалидных данных в поле телефон
+
+
 
 
 

@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 class MainPageLocators:
     MAIN_ORDER_BUTTON = (By.XPATH, ".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']")  # Кнопка заказать  в середине страницы
     HEADER_ORDER_BUTTON = (By.XPATH, ".//button[@class = 'Button_Button__ra12g']")  # Кнопка заказа в заголовке страницы
-    DZEN = (By.XPATH, ".//div[@class='m4275241c']")  # Попап яндекс
+    DZEN = (By.XPATH, ".//div[text()='Удобный и быстрый Яндекс Браузер']")  # Попап яндекс
     YANDEX_LOGO = (By.XPATH, ".//a[@class='Header_LogoYandex__3TSOI']")  # Яндекс лого
     ACCORDION_QUESTION_1 = (By.XPATH, ".//div[@aria-controls= 'accordion__panel-0']")  # Первый вопрос
     ACCORDION_ANSWER_1 = (By.XPATH, ".//div[@id='accordion__panel-0']")  # Ответ на первый вопрос

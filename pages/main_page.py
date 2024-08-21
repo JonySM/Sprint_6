@@ -1,5 +1,3 @@
-from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.support.wait import WebDriverWait
 from locators.main_page_locators import MainPageLocators
 from pages.base_page import BasePage
 
@@ -26,8 +24,8 @@ class MainPage(BasePage):
         yandex_logo.click()
 
     def get_dzen_popup(self):
-        dzen_search = self.wait_and_find_element(MainPageLocators.DZEN)
-        return dzen_search
+        dzen_popup = self.wait_and_find_element(MainPageLocators.DZEN)
+        return dzen_popup
 
 
 

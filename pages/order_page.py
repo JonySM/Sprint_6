@@ -1,9 +1,9 @@
 from locators.order_page_locators import OrderPageLocators
 from pages.base_page import BasePage
-from settings import Url
 
 
 class OrderPage(BasePage):
+
     def set_name_field(self, name):
         name_fild = self.wait_and_find_element(OrderPageLocators.NAME_FILD)
         name_fild.send_keys(name)
@@ -12,8 +12,8 @@ class OrderPage(BasePage):
         surname_fild = self.wait_and_find_element(OrderPageLocators.SURNAME_FILD)
         surname_fild.send_keys(surname)
 
-    def set_adress_fild(self, adress):
-        adress_fild = self.wait_and_find_element(OrderPageLocators.ADRESS_FILD)
+    def set_address_fild(self, adress):
+        adress_fild = self.wait_and_find_element(OrderPageLocators.ADDRESS_FILD)
         adress_fild.send_keys(adress)
 
     def set_subway_fild(self, subway):
@@ -57,7 +57,7 @@ class OrderPage(BasePage):
     def set_two_day_period(self):
         period_fild = self.wait_and_find_element(OrderPageLocators.PERIOD_FILD)
         period_fild.click()
-        two_day = self.wait_find_and_click_element(OrderPageLocators.TWO_DAY)
+        two_day = self.wait_and_find_element(OrderPageLocators.TWO_DAY)
         two_day.click()
 
     def set_black_color(self):
@@ -79,6 +79,31 @@ class OrderPage(BasePage):
     def click_on_the_logo_scooter(self):
         logo_scooter = self.wait_and_find_element(OrderPageLocators.LOGO_SCOOTER)
         logo_scooter.click()
+
+    def get_error_message_name(self):
+        error_message_name = self.wait_and_find_element(OrderPageLocators.ERROR_MESSAGE_NAME)
+        return error_message_name
+
+    def get_error_message_surname(self):
+        error_message_surname = self.wait_and_find_element(OrderPageLocators.ERROR_MESSAGE_SURNAME)
+        return error_message_surname
+
+    def get_error_message_address(self):
+        error_message_address = self.wait_and_find_element(OrderPageLocators.ERROR_MESSAGE_ADDRESS)
+        return error_message_address
+
+    def get_error_message_phone(self):
+        error_message_phone = self.wait_and_find_element(OrderPageLocators.ERROR_MESSAGE_PHONE)
+        return error_message_phone
+
+
+
+
+
+
+
+
+
 
 
 
