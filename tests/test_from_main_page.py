@@ -29,9 +29,8 @@ class TestFromMainPage:
         question = MainPage(driver)
         question.open_page(Url.QA_SCOOTER_SERVICE)
         question.click_on_the_questions_button(accordion_question)
-        answer = MainPage(driver)
-        answer.wait_and_find_element(accordion_answer)
-        assert answer.get_answer(accordion_answer, answer_text) == answer_text
+        question.wait_and_find_element(accordion_answer)
+        assert question.get_answer(accordion_answer, answer_text) == answer_text
 
 
 
